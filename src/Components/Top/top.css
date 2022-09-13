@@ -1,0 +1,8 @@
+.top{
+    height: 60px;
+    background: #202329;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}

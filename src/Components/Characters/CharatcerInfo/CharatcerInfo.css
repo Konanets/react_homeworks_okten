@@ -1,0 +1,10 @@
+.info{
+    background: #3C3E44;
+    width: 600px;
+    height: 220px;
+    display: flex;
+    border-radius: 10px;
+    margin: 40px;
+    gap: 20px;
+    color: white;
+}
