@@ -11,7 +11,6 @@ const Launch = ({launch}) => {
         width: '150px',
         height: '150px'
     }
-
     return (
         <div  style={launchStyles}>
             <div>{launch.mission_name}-{launch.launch_year}</div>

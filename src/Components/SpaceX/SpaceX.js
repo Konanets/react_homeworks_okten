@@ -15,10 +15,9 @@ const SpaceX = () => {
         flexWrap:"wrap",
         justifyContent:'center'
     }
-
     return (
         <div style={launchersStyle}>
-            {launches.filter(({launch_year})=>launch_year!==2006).map(launch=><Launch launch={launch}/>)}
+            {launches.filter(({launch_year})=>launch_year!=="2006").map((launch,index)=><Launch launch={launch} key={index}/>)}
         </div>
     );
 };
