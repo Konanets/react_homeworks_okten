@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Post = ({post,post:{body,title}}) => {
     console.log(post)
     return (

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const User = ({user:{name,id},getPostsById}) => {
     return (
         <div>

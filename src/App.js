@@ -1,9 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import Users from "./components/Users/Users";
-import {userService} from "./services";
 import {useState} from "react";
-import Posts from "./components/Posts/Posts";
+
+import './App.css';
+
+import {userService} from "./services";
+import {Posts, Users} from "./components";
+
+
+
 
 function App() {
 
@@ -16,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-        <Users getPostsById={getPostsById}/>
+        <Users getPostsById={getPostsById}></Users>
         {posts && <Posts posts={posts}/>}
     </div>
   );

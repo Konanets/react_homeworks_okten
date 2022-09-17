@@ -1,4 +1,3 @@
-import React from 'react';
 import Post from "../Post/Post";
 
 const Posts = ({posts}) => {
@@ -10,4 +9,4 @@ const Posts = ({posts}) => {
     );
 };
 
-export default Posts;
+export {Posts};

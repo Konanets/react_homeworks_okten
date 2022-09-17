@@ -1,5 +1,7 @@
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
+
 import {userService} from "../../services";
+
 import User from "../User/User";
 
 const Users = ({getPostsById}) => {
@@ -18,7 +20,7 @@ const Users = ({getPostsById}) => {
     );
 };
 
-export default Users;
+export {Users};
 
 //Отримати всіх користувачів з jsonplaceholder, вивести їх.
 // Біля кожного користувача зробити кнопку, при натисканні на яку в Апп компоненті з'являються всі пости поточного користувача
