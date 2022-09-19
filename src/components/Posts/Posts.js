@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 
 import {getService} from "../../services";
 import {Post} from "../post/Post";
+import './Posts.css'
 
 const Posts = ({userId}) => {
     let [posts,setPosts]=useState([])
@@ -12,7 +13,7 @@ const Posts = ({userId}) => {
 
 
     return (
-        <div>
+        <div className={'posts-block'}>
             {posts.map((post)=><Post key={post.id} post={post}/>)}
 
         </div>

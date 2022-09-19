@@ -1,0 +1,122 @@
+Index: src/components/Posts/Posts.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import {useEffect, useState} from \"react\";\n\nimport {getService} from \"../../services\";\nimport {Post} from \"../post/Post\";\n\nconst Posts = ({userId}) => {\n    let [posts,setPosts]=useState([])\n\n    useEffect(()=>{\n        getService.getPosts(userId).then(({data}) => setPosts(data))\n    },[userId])\n\n\n    return (\n        <div>\n            {posts.map((post,index)=><Post key={index} post={post}/>)}\n\n        </div>\n    );\n};\n\nexport {Posts};
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Posts/Posts.js b/src/components/Posts/Posts.js
+--- a/src/components/Posts/Posts.js	(revision afe59a243025a25c45c2bf5dd61d04056a92fde6)
++++ b/src/components/Posts/Posts.js	(date 1663604313315)
+@@ -2,6 +2,7 @@
+ 
+ import {getService} from "../../services";
+ import {Post} from "../post/Post";
++import './Posts.css'
+ 
+ const Posts = ({userId}) => {
+     let [posts,setPosts]=useState([])
+@@ -12,8 +13,8 @@
+ 
+ 
+     return (
+-        <div>
+-            {posts.map((post,index)=><Post key={index} post={post}/>)}
++        <div className={'posts-block'}>
++            {posts.map((post)=><Post key={post.id} post={post}/>)}
+ 
+         </div>
+     );
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"b4a22299-7b0d-4b0a-8595-af4d4ab16ca4\" name=\"Changes\" comment=\"init\">\n      <change beforePath=\"$PROJECT_DIR$/src/App.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/App.js\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"CSS File\" />\n        <option value=\"JavaScript File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"home_work2_axios\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2EzNZmJShj83IutSnVdqyBTwFrw\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"WebServerToolWindowFactoryState\": \"false\",\n    \"list.type.of.created.stylesheet\": \"CSS\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\"\n  }\n}]]></component>\n  <component name=\"RunManager\">\n    <configuration name=\"start\" type=\"js.build_tools.npm\" temporary=\"true\" nameIsGenerated=\"true\">\n      <package-json value=\"$PROJECT_DIR$/package.json\" />\n      <command value=\"run\" />\n      <scripts>\n        <script value=\"start\" />\n      </scripts>\n      <node-interpreter value=\"project\" />\n      <envs />\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"npm.start\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"b4a22299-7b0d-4b0a-8595-af4d4ab16ca4\" name=\"Changes\" comment=\"\" />\n      <created>1663594510733</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1663594510733</updated>\n      <workItem from=\"1663594511770\" duration=\"1454000\" />\n      <workItem from=\"1663597349161\" duration=\"3052000\" />\n      <workItem from=\"1663600774071\" duration=\"2433000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"init\">\n      <created>1663598406195</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1663598406195</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"init\">\n      <created>1663603555680</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1663603555681</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"init\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"init\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision afe59a243025a25c45c2bf5dd61d04056a92fde6)
++++ b/.idea/workspace.xml	(date 1663604181504)
+@@ -1,9 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="b4a22299-7b0d-4b0a-8595-af4d4ab16ca4" name="Changes" comment="init">
+-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+-    </list>
++    <list default="true" id="b4a22299-7b0d-4b0a-8595-af4d4ab16ca4" name="Changes" comment="init" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -36,17 +34,17 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "list.type.of.created.stylesheet": "CSS",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RunManager">
+     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+       <package-json value="$PROJECT_DIR$/package.json" />
+@@ -74,7 +72,7 @@
+       <updated>1663594510733</updated>
+       <workItem from="1663594511770" duration="1454000" />
+       <workItem from="1663597349161" duration="3052000" />
+-      <workItem from="1663600774071" duration="2433000" />
++      <workItem from="1663600774071" duration="2593000" />
+     </task>
+     <task id="LOCAL-00001" summary="init">
+       <created>1663598406195</created>
+@@ -90,7 +88,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1663603555681</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="init">
++      <created>1663603908350</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1663603908350</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+Index: src/components/Users/Users.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React, {useEffect, useState} from 'react';\n\nimport {getService} from \"../../services\";\nimport './Users.css'\nimport {User} from \"../User/User\";\n\nconst Users = ({setUserId}) => {\n\n    const [users,setUsers]=useState([])\n\n    useEffect(()=>{\n        getService.getUsers().then(value => setUsers(value.data))\n        console.log(users)\n    },[])\n\n\n    return (\n        <div className={'users-block'}>\n            {users.map((user,index)=><User key={index} user={user} setUserId={setUserId}/>)}\n        </div>\n    );\n};\n\nexport {Users};
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Users/Users.js b/src/components/Users/Users.js
+--- a/src/components/Users/Users.js	(revision afe59a243025a25c45c2bf5dd61d04056a92fde6)
++++ b/src/components/Users/Users.js	(date 1663604177276)
+@@ -16,7 +16,7 @@
+ 
+     return (
+         <div className={'users-block'}>
+-            {users.map((user,index)=><User key={index} user={user} setUserId={setUserId}/>)}
++            {users.map((user)=><User key={user.id} user={user} setUserId={setUserId}/>)}
+         </div>
+     );
+ };
