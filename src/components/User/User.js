@@ -1,8 +1,8 @@
-const User = ({user:{name,id},getPostsById}) => {
+const User = ({user:{name,id},setPostsById}) => {
     return (
         <div>
             <h2>{name}</h2>
-            <button onClick={()=>getPostsById(id)}>Click me</button>
+            <button onClick={()=>setPostsById(id)}>Click me</button>
         </div>
     );
 };

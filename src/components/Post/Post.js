@@ -1,5 +1,4 @@
-const Post = ({post,post:{body,title}}) => {
-    console.log(post)
+const Post = ({post:{body,title}}) => {
     return (
         <div>
             <h2>{title}</h2>

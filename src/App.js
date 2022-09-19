@@ -1,28 +1,25 @@
 import {useState} from "react";
 
 import './App.css';
-
 import {userService} from "./services";
 import {Posts, Users} from "./components";
 
 
-
-
 function App() {
 
-    let [posts,setPosts]=useState([])
+    let [postsID, setPostsID] = useState(null)
 
-    const getPostsById=(id)=>{
-        userService.getCurrentUserPosts(id).then(({data}) => setPosts(data))
+    const setPostsById = (id) => {
+        setPostsID(id)
     }
 
+    return (
+        <div className="App">
+            <Users setPostsById={setPostsById}></Users>
+            {postsID && <Posts postsID={postsID}/>}
 
-  return (
-    <div className="App">
-        <Users getPostsById={getPostsById}></Users>
-        {posts && <Posts posts={posts}/>}
-    </div>
-  );
+        </div>
+    );
 }
 
 export default App;

@@ -4,7 +4,7 @@ import {userService} from "../../services";
 
 import User from "../User/User";
 
-const Users = ({getPostsById}) => {
+const Users = ({setPostsById}) => {
 
     let [users,setUsers]=useState([]);
 
@@ -15,7 +15,7 @@ const Users = ({getPostsById}) => {
 
     return (
         <div>
-            {users.length?users.map((user,index)=><User key={index} user={user} getPostsById={getPostsById}/>):<h1>Loading....</h1>}
+            {users.length?users.map((user,index)=><User key={index} user={user} setPostsById={setPostsById}/>):<h1>Loading....</h1>}
         </div>
     );
 };
