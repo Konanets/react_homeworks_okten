@@ -16,7 +16,7 @@ const Users = ({setUserId}) => {
 
     return (
         <div className={'users-block'}>
-            {users.map((user,index)=><User key={index} user={user} setUserId={setUserId}/>)}
+            {users.map((user)=><User key={user.id} user={user} setUserId={setUserId}/>)}
         </div>
     );
 };
