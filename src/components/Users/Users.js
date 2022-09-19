@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import {getService} from "../../services";
 
+import {getService} from "../../services";
 import './Users.css'
 import {User} from "../User/User";
 
