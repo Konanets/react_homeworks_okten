@@ -1,12 +1,17 @@
 import React from 'react';
 
-const User = ({user:{name,id}}) => {
+import './User.css'
+
+const User = ({user:{name,id},setUserId}) => {
+
+
+
     return (
-        <div>
+        <div className={'user-block'}>
             <p>{name}-{id}</p>
-            <button>Get Details</button>
+            <button onClick={()=>{setUserId(id)}}>Get Details</button>
         </div>
     );
 };
 
-export default User;
+export {User};

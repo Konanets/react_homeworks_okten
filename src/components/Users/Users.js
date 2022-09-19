@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import {getService} from "../../services";
-import User from "../User/User";
 
 import './Users.css'
+import {User} from "../User/User";
 
-const Users = () => {
+const Users = ({setUserId}) => {
 
     const [users,setUsers]=useState([])
 
@@ -16,9 +16,9 @@ const Users = () => {
 
     return (
         <div className={'users-block'}>
-            {users.map((user,index)=><User key={index} user={user}/>)}
+            {users.map((user,index)=><User key={index} user={user} setUserId={setUserId}/>)}
         </div>
     );
 };
 
-export default Users;
+export {Users};
