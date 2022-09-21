@@ -27,9 +27,6 @@ const CarForm = ({updateCar,setUpdateCar}) => {
         setUpdateCar(null)
     }
 
-
-
-
     useEffect(()=>{
         if (updateCar) {
             setValue('model',updateCar.model);

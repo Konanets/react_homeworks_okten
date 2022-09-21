@@ -13,7 +13,7 @@ const Cars = () => {
 
     useEffect(()=>{
         carService.getCars().then(({data}) => setCars(data))
-    },[])
+    },[cars])
 
     return (
         <Container>
