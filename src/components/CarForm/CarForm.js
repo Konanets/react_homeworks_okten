@@ -14,6 +14,7 @@ const CarForm = ({updateCar,setUpdateCar}) => {
 
     const onSubmit= async (car)=>{
         await carService.postCar(car)
+        reset()
     }
 
     const onUpdate=async (date)=>{
@@ -24,6 +25,7 @@ const CarForm = ({updateCar,setUpdateCar}) => {
         }
 
         setUpdateCar(null)
+        reset()
     }
 
 
