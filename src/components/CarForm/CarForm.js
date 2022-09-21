@@ -44,18 +44,16 @@ const CarForm = ({updateCar,setUpdateCar}) => {
             <form onSubmit={handleSubmit((date)=>updateCar?onUpdate(date):onSubmit(date))}>
                 <FormGroup row={true} sx={{display:'flex',justifyContent:'space-evenly'}}>
                     <div>
-                        <TextField focused variant={'filled'} label={'model'} {...register('model')}></TextField>
-                        {errors.model&&<p>{errors.model.message}</p>}
+                        <TextField helperText={errors.model?.message} focused variant={'filled'} label={'model'} {...register('model')}></TextField>
                     </div>
 
                     <div>
-                        <TextField focused variant={'filled'} label={'price'} {...register('price')}></TextField>
-                        {errors.model&&<p>{errors.price.message}</p>}
+                        <TextField helperText={errors.price?.message}  focused variant={'filled'} label={'price'} {...register('price')}></TextField>
                     </div>
 
                     <div>
-                        <TextField focused variant={'filled'} id={'outlined-number'} label={'year'} {...register('year')}></TextField>
-                        {errors.model&&<p>{errors.year.message}</p>}
+                        <TextField helperText={errors.year?.message} focused variant={'filled'} id={'outlined-number'} label={'year'} {...register('year')}></TextField>
+
                     </div>
                         <Button type={"submit"} variant={"contained"} sx={{width:120,height:55}} >
                             {updateCar?'Update':'Submit'}
