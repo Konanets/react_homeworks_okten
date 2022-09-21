@@ -34,7 +34,7 @@ const CarForm = ({updateCar,setUpdateCar}) => {
             setValue('year',updateCar.year);
         }
 
-    },[updateCar])
+    },[updateCar,setValue])
 
     return (
         <Container sx={{mt:5}}>
