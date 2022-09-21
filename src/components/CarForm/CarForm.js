@@ -44,17 +44,17 @@ const CarForm = ({updateCar,setUpdateCar}) => {
                 <FormGroup row={true} sx={{display:'flex',justifyContent:'space-evenly'}}>
                     <div>
                         <TextField focused variant={'filled'} label={'model'} {...register('model')}></TextField>
-                        {errors.model&&<FormHelperText>{errors.model.message}</FormHelperText>}
+                        {errors.model&&<p>{errors.model.message}</p>}
                     </div>
 
                     <div>
                         <TextField focused variant={'filled'} label={'price'} {...register('price')}></TextField>
-                        {errors.model&&<FormHelperText>{errors.model.message}</FormHelperText>}
+                        {errors.model&&<p>{errors.model.message}</p>}
                     </div>
 
                     <div>
                         <TextField focused variant={'filled'} id={'outlined-number'} label={'year'} {...register('year')}></TextField>
-                        {errors.model&&<FormHelperText>{errors.model.message}</FormHelperText>}
+                        {errors.model&&<p>{errors.model.message}</p>}
                     </div>
                         <Button type={"submit"} variant={"contained"} sx={{width:120,height:55}} >
                             {updateCar?'Update':'Submit'}
