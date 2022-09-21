@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f47ef31-9c1b-4805-9f75-1d33962adbf1" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CarForm/CarForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarForm/CarForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cars/Cars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cars/Cars.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +44,11 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -71,7 +78,7 @@
       <workItem from="1663757447531" duration="9493000" />
       <workItem from="1663767225324" duration="7410000" />
       <workItem from="1663774978488" duration="4229000" />
-      <workItem from="1663780017441" duration="340000" />
+      <workItem from="1663780017441" duration="2543000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1663769726316</created>
@@ -136,7 +143,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663778504504</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="init">
+      <created>1663780389281</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663780389281</updated>
+    </task>
+    <task id="LOCAL-00011" summary="init">
+      <created>1663780463773</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663780463773</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import CarForm from "../CarForm/CarForm";
 import {carService} from "../../services";
-import {Car} from "../Car/Car";
 import {Container} from "@mui/material";
+
+import {Car} from "../Car/Car";
+import CarForm from "../CarForm/CarForm";
 
 const Cars = () => {
 
@@ -12,7 +13,7 @@ const Cars = () => {
 
     useEffect(()=>{
         carService.getCars().then(({data}) => setCars(data))
-    },[cars])
+    },[])
 
     return (
         <Container>
