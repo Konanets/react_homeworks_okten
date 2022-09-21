@@ -10,10 +10,11 @@ import {carService} from "../../services";
 
 const CarForm = ({updateCar,setUpdateCar}) => {
 
-    const {register,handleSubmit,formState:{errors},setValue}=useForm({resolver:joiResolver(carFormValidator),mode:'all'})
+    const {register,handleSubmit,formState:{errors},setValue,reset}=useForm({resolver:joiResolver(carFormValidator),mode:'all'})
 
     const onSubmit= async (car)=>{
         await carService.postCar(car)
+        reset()
     }
 
     const onUpdate=async (date)=>{
@@ -24,6 +25,7 @@ const CarForm = ({updateCar,setUpdateCar}) => {
         }
 
         setUpdateCar(null)
+        reset()
     }
 
 
