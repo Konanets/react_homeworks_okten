@@ -7,7 +7,7 @@ import {Container} from "@mui/material";
 const Cars = () => {
 
     const [cars,setCars]=useState([])
-    const [updateCar,setUpdateCar]=useState({})
+    const [updateCar,setUpdateCar]=useState(null)
 
 
     useEffect(()=>{

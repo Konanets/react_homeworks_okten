@@ -1,24 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f47ef31-9c1b-4805-9f75-1d33962adbf1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/react_homeworks_okten.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Car/Car.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CarForm/CarForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cars/Cars.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/confings/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/confings/urls.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/axios.services.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/car.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validators/CarFormValidator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validators/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+    <list default="true" id="9f47ef31-9c1b-4805-9f75-1d33962adbf1" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CarForm/CarForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarForm/CarForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cars/Cars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cars/Cars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/car.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/car.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,8 +70,16 @@
       <updated>1663708935247</updated>
       <workItem from="1663708936312" duration="2556000" />
       <workItem from="1663757447531" duration="9493000" />
-      <workItem from="1663767225324" duration="2375000" />
+      <workItem from="1663767225324" duration="7130000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1663769726316</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663769726316</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,5 +98,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>
