@@ -49,12 +49,12 @@ const CarForm = ({updateCar,setUpdateCar}) => {
 
                     <div>
                         <TextField focused variant={'filled'} label={'price'} {...register('price')}></TextField>
-                        {errors.model&&<p>{errors.model.message}</p>}
+                        {errors.model&&<p>{errors.price.message}</p>}
                     </div>
 
                     <div>
                         <TextField focused variant={'filled'} id={'outlined-number'} label={'year'} {...register('year')}></TextField>
-                        {errors.model&&<p>{errors.model.message}</p>}
+                        {errors.model&&<p>{errors.year.message}</p>}
                     </div>
                         <Button type={"submit"} variant={"contained"} sx={{width:120,height:55}} >
                             {updateCar?'Update':'Submit'}
