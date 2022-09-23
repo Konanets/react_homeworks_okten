@@ -1,8 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
 import {Link, Route, Routes} from "react-router-dom";
-import {AlbumsPage, PostPage, TodosPage, WelcomePage} from "./pages";
-import {CommentsPage} from "./pages/CommentsPage";
+
+import './App.css';
+import {AlbumsPage, CommentsPage, PostPage, TodosPage, WelcomePage} from "./pages";
 
 function App() {
     return (

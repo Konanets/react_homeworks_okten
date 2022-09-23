@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
+
 import {getService} from "../services/jsonPlaceHolder.service";
-import Post from "../components/Post/Post";
+import {Post} from "../components";
 
 
 
