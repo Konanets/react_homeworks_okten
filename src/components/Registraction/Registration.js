@@ -1,5 +1,5 @@
-import {useLocation, useNavigate} from "react-router-dom";
-import {useAuth} from "../../hooks";
+import {useNavigate} from "react-router-dom";
+
 import {authService} from "../../services";
 import {useForm} from "react-hook-form";
 import {CardHeader, FormButton, FormCard, FormContainer, Input} from "./Registration.Styles";

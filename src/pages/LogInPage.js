@@ -1,5 +1,6 @@
 import {LogIn} from "../components";
 
+
 const LogInPage = () => {
     return (
         <div>

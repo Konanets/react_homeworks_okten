@@ -4,8 +4,8 @@ import {authService} from "../../services";
 import {useAuth} from "../../hooks";
 import {useNavigate} from "react-router-dom";
 
-const LogIn = () => {
 
+const LogIn = () => {
 
 
     const {logIn}=useAuth()

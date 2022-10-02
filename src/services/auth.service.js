@@ -1,6 +1,6 @@
 import {axiosInstance} from "./axios.service";
-import {_urls} from "../configs/urls";
 
+import {_urls} from "../configs";
 
 const _accessToken = 'access'
 const _refreshToken = 'refresh'

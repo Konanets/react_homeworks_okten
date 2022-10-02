@@ -1,7 +1,8 @@
 import axios from "axios";
-import {baseUrl} from "../configs/urls";
-import {authService} from "./auth.service";
 import {createBrowserHistory} from "history";
+
+import {baseUrl} from "../configs";
+import {authService} from "./auth.service";
 
 const history=createBrowserHistory()
 

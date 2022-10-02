@@ -1,7 +1,9 @@
-import {Cars} from "../../components";
-import {useEffect, useState} from "react";
-import {carsService} from "../../services";
 import {useSearchParams} from "react-router-dom";
+import {useEffect, useState} from "react";
+
+
+import {Cars} from "../../components";
+import {carsService} from "../../services";
 import {CarsPageContainer, NavButton, NavigationContainer} from "./CarsPage.Style";
 
 const CarsPage = () => {
