@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../react_homeworks_okten.iml" filepath="$PROJECT_DIR$/../react_homeworks_okten.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/react_homeworks_okten.iml" filepath="$PROJECT_DIR$/.idea/react_homeworks_okten.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,5 @@
+export * from './LogInPage'
+export * from './RegistrationPage'
+export * from './CarsPage/CarsPage'
+export * from './LogOutPage'
+export * from './FormPage'
