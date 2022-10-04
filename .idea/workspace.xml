@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1bbe1d5-2eb8-4b94-b800-3d90117e08bb" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CarForm/CarForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarForm/CarForm.js" afterDir="false" />
-    </list>
+    <list default="true" id="a1bbe1d5-2eb8-4b94-b800-3d90117e08bb" name="Changes" comment="init" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +15,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -66,7 +68,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9f47ef31-9c1b-4805-9f75-1d33962adbf1" name="Changes" comment="" />
+      <changelist id="a1bbe1d5-2eb8-4b94-b800-3d90117e08bb" name="Changes" comment="init" />
       <created>1663708935247</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -76,6 +78,7 @@
       <workItem from="1663767225324" duration="7410000" />
       <workItem from="1663774978488" duration="4229000" />
       <workItem from="1663780017441" duration="5570000" />
+      <workItem from="1664906998857" duration="597000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1663769726316</created>
