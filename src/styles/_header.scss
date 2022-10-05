@@ -1,0 +1,15 @@
+.header{
+  &-container{
+    height: 70px;
+    background-color: #61dafb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  &-link{
+    font-size: 35px;
+    color: brown;
+  }
+
+}
